@@ -1,0 +1,8 @@
+## Interface: 30100
+## Title: Kousei
+## Author: Haste
+## Version: 1.0
+## X-eMail: troeks@gmail.com
+## Notes: My UI settings.
+
+cvars.lua
