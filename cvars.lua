@@ -1,5 +1,6 @@
 for _, cvarData in pairs{
 	-- Things that exist in the Interface Options
+	'deselectOnClick 0 GAMEFIELD_DESELECT_TEXT',
 	'autoLootDefault 1 AUTO_LOOT_DEFAULT_TEXT',
 	'autoSelfCast 1 AUTO_SELF_CAST_TEXT',
 	'autoDismountFlying 1 AUTO_DISMOUNT_FLYING_TEXT',
