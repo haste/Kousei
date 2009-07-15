@@ -20,6 +20,7 @@ for _, cvarData in pairs{
 	'CombatDamage 0 SHOW_DAMAGE_TEXT',
 	'CombatHealing 1 SHOW_COMBAT_HEALING',
 	'showArenaEnemyFrames 0 SHOW_ARENA_ENEMY_FRAMES_TEXT',
+	'cameraDistanceMax 20',
 	'cameraDistanceMaxFactor 4',
 	'scriptErrors 1 SHOW_LUA_ERRORS',
 
