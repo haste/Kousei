@@ -10,3 +10,4 @@ cvars.lua
 chat.lua
 uierrorsframe.lua
 slashcmds.lua
+autoloot.lua
