@@ -39,3 +39,5 @@ local function LOOT_SLOT_CLEARED(self, event, slot)
 end
 
 Kousei:RegisterEvent('LOOT_BIND_CONFIRM', LOOT_BIND_CONFIRM)
+Kousei:RegisterEvent('LOOT_SLOT_CLEARED', LOOT_SLOT_CLEARED)
+
