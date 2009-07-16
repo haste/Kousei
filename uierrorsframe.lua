@@ -9,10 +9,10 @@ local blacklist = {
 }
 
 UIErrorsFrame:UnregisterEvent"UI_ERROR_MESSAGE"
-Kousei.UI_ERROR_MESSAGE = function(self, event, error)
+local UI_ERROR_MESSAGE = function(self, event, error)
 	if(not blacklist[error]) then
 		UIErrorsFrame:AddMessage(error, 1, .1, .1)
 	end
 end
 
-Kousei:RegisterEvent'UI_ERROR_MESSAGE'
+Kousei:RegisterEvent('UI_ERROR_MESSAGE', UI_ERROR_MESSAGE)

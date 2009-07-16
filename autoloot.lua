@@ -21,7 +21,7 @@ local OnUpdate = function()
 	ConfirmLootSlot(lastSlot)
 end
 
-function Kousei:LOOT_BIND_CONFIRM(event, slot)
+local function LOOT_BIND_CONFIRM(self, event, slot)
 	local link = GetLootSlotLink(slot)
 	if(link) then
 		local id = tonumber(link:match("item:(%d+):"))
@@ -32,10 +32,10 @@ function Kousei:LOOT_BIND_CONFIRM(event, slot)
 	end
 end
 
-function Kousei:LOOT_SLOT_CLEARED(event, slot)
+local function LOOT_SLOT_CLEARED(self, event, slot)
 	if(lastSlot == slot) then
 		Kousei:SetScript('OnUpdate', nil)
 	end
 end
 
-Kousei:RegisterEvent'LOOT_BIND_CONFIRM'
+Kousei:RegisterEvent('LOOT_BIND_CONFIRM', LOOT_BIND_CONFIRM)
