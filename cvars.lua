@@ -44,6 +44,9 @@ for _, cvarData in pairs{
 	-- Camerae move speed: 0 - 50 (8.33 default)
 	'cameraDistanceMoveSpeed 50',
 
+	-- How the camera should move between saved positions (1: smooth, 2: instant).
+	'cameraViewBlendStyle 2',
+
 	-- http://forums.worldofwarcraft.com/thread.html?topicId=1778017311&sid=1&pageNo=5#96
 	-- ╔════════╤════════╤════════╤════════╤════════╤════════╤════════╤════════╗
 	-- ║ Core 8 │ Core 7 │ Core 6 │ Core 5 │ Core 4 │ Core 3 │ Core 2 │ Core 1 ║
