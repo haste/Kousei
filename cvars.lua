@@ -22,6 +22,7 @@ for _, cvarData in pairs{
 	'showArenaEnemyFrames 0 SHOW_ARENA_ENEMY_FRAMES_TEXT',
 	'cameraDistanceMax 20',
 	'cameraDistanceMaxFactor 4',
+	'cameraWaterCollision 0 WATER_COLLISION',
 	'scriptErrors 1 SHOW_LUA_ERRORS',
 
 	-- Things that exist in the Sound Options
