@@ -16,6 +16,11 @@ items = setmetatable({}, {
 	end
 })
 
+-- Not like anyone would care if I loot this item!
+local function LootAnyway()
+	return GetNumRaidMembers() == 0
+end
+
 local lastSlot
 local OnUpdate = function()
 	ConfirmLootSlot(lastSlot)
@@ -25,7 +30,7 @@ local function LOOT_BIND_CONFIRM(self, event, slot)
 	local link = GetLootSlotLink(slot)
 	if(link) then
 		local id = tonumber(link:match("item:(%d+):"))
-		if(items[id]) then
+		if(items[id] or LootAnyway()) then
 			lastSlot = slot
 			Kousei:SetScript('OnUpdate', OnUpdate)
 		end
