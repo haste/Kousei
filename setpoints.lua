@@ -20,7 +20,7 @@ local VARIABLES_LOADED= function(self, event, addon)
 	lock(anchor(MinimapCluster, 'TOPRIGHT', 8, 10))
 
 	-- Move the buff frame so it sits nicely to the top left of the minimap.
-	anchor(TemporaryEnchantFrame, 'TOPRIGHT', -159, -11)
+	anchor(ConsolidatedBuffs, 'TOPRIGHT', -159, -11)
 end
 
 Kousei:RegisterEvent('VARIABLES_LOADED', VARIABLES_LOADED)
