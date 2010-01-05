@@ -18,7 +18,7 @@ local function ADDON_LOADED(self, event, addon)
 		ChangeChatColor("RAID", .8, .85, .8)
 		ChangeChatColor("RAID_LEADER", .8, .85, .8)
 
-		self:UnregisterEvent(event)
+		self:UnregisterEvent(event, ADDON_LOADED)
 	end
 end
 
