@@ -11,7 +11,7 @@ local function UPDATE_INSTANCE_INFO(self, event)
 	for i=1, GetNumSavedInstances() do
 		local name, _, _, _, lock, extend = GetSavedInstanceInfo(i)
 
-		if(not(lock or extend)) then
+		if(name == 'The Oculus' and not(lock or extend)) then
 			return SetSavedInstanceExtend(i, true)
 		end
 	end
