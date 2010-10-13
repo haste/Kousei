@@ -5,12 +5,8 @@ local PLAYER_ENTERING_WORLD = function()
 		'autoLootDefault 1 AUTO_LOOT_DEFAULT_TEXT',
 		'autoSelfCast 1 AUTO_SELF_CAST_TEXT',
 		'autoDismountFlying 1 AUTO_DISMOUNT_FLYING_TEXT',
-		'showClock 0 SHOW_CLOCK',
-		'showItemLevel 1 SHOW_ITEM_LEVEL',
 		'threatShowNumeric 1 SHOW_NUMERIC_THREAT',
-		'previewTalents 1 PREVIEW_TALENT_CHANGES',
 		'showLootSpam 0 SHOW_LOOT_SPAM',
-		'questFadingDisable 1 SHOW_QUEST_FADING_TEXT',
 		'advancedWatchFrame 1 ADVANCED_OBJECTIVES_TEXT',
 		'watchFrameIgnoreCursor 1 OBJECTIVES_IGNORE_CURSOR_TEXT',
 		'profanityFilter 0 PROFANITY_FILTER',
@@ -51,9 +47,6 @@ local PLAYER_ENTERING_WORLD = function()
 
 		-- How the camera should move between saved positions (1: smooth, 2: instant).
 		'cameraViewBlendStyle 2',
-
-		-- Don't synchronize settings with the server.
-		'synchronizeSettings 0',
 
 		-- http://forums.worldofwarcraft.com/thread.html?topicId=1778017311&sid=1&pageNo=5#96
 		-- ╔════════╤════════╤════════╤════════╤════════╤════════╤════════╤════════╗
