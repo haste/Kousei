@@ -1,4 +1,4 @@
-## Interface: 30100
+## Interface: 40000
 ## Title: Kousei
 ## Author: Haste
 ## Version: 1.0
@@ -13,3 +13,4 @@ slashcmds.lua
 autoloot.lua
 setpoints.lua
 fuculus.lua
+fuclock.lua
