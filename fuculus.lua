@@ -1,8 +1,6 @@
 local function ADDON_LOADED(self, event, addon)
 	if(addon == 'Kousei') then
 		RequestRaidInfo()
-
-		self:UnregisterEvent(event, ADDON_LOADED)
 	end
 end
 
