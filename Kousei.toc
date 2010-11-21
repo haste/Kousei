@@ -14,3 +14,4 @@ autoloot.lua
 setpoints.lua
 fuculus.lua
 fuclock.lua
+bindings.

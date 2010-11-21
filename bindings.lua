@@ -1,0 +1,1 @@
+SetConsoleKey'F4'
