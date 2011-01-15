@@ -2,9 +2,6 @@
 ChatFrame2:SetJustifyH"RIGHT"
 ChatFrame4:SetJustifyH"CENTER"
 
--- This is mainly because we hate the FCF.
-FCF_ValidateChatFramePosition = Kousei.dummy
-
 local function ADDON_LOADED(self, event, addon)
 	if(addon == 'Kousei') then
 		-- chat channel colors
