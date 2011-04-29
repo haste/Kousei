@@ -15,7 +15,6 @@ local PLAYER_ENTERING_WORLD = function()
 		'spamFilter 0 DISABLE_SPAM_FILTER',
 		'removeChatDelay 1 REMOVE_CHAT_DELAY_TEXT',
 		'guildMemberNotify 1 GUILDMEMBER_ALERT',
-		'guildRecruitmentChannel 0 AUTO_JOIN_GUILD_CHANNEL',
 		'UnitNameOwn 1 UNIT_NAME_OWN',
 		'CombatDamage 0 SHOW_DAMAGE_TEXT',
 		'CombatHealing 1 SHOW_COMBAT_HEALING',
