@@ -1,4 +1,4 @@
-local PLAYER_ENTERING_WORLD = function()
+local function PLAYER_ENTERING_WORLD(self)
 	for _, cvarData in pairs{
 		-- Things that exist in the Interface Options
 		'deselectOnClick 0 GAMEFIELD_DESELECT_TEXT',
@@ -25,7 +25,6 @@ local PLAYER_ENTERING_WORLD = function()
 		'scriptErrors 1 SHOW_LUA_ERRORS',
 
 		-- Things that exist in the Sound Options
-		'Sound_EnableAllSound 0 ENABLE_SOUND',
 
 		-- Things that we probably shouldn't play too much with :3
 		-- I always forget to turn this off...
@@ -67,6 +66,8 @@ local PLAYER_ENTERING_WORLD = function()
 	} do
 		SetCVar(string.split(' ', cvarData))
 	end
+
+	self:UnregisterEvent('PLAYER_ENTERING_WORLD', PLAYER_ENTERING_WORLD)
 end
 
 Kousei:RegisterEvent('PLAYER_ENTERING_WORLD', PLAYER_ENTERING_WORLD)
