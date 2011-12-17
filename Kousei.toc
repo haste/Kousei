@@ -10,7 +10,6 @@ cvars.lua
 chat.lua
 uierrorsframe.lua
 slashcmds.lua
-autoloot.lua
 setpoints.lua
 fuclock.lua
 bindings.lua
