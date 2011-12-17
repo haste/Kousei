@@ -27,6 +27,3 @@ SLASH_SMART_ADDON1 = '/sm'
 
 SlashCmdList['RELOAD_UI'] = function() ReloadUI() end
 SLASH_RELOAD_UI1 = '/rl'
-
-SlashCmdList['DEBUG'] = function() LibStub("LibDebug-1.0"):Toggle() end
-SLASH_DEBUG1 = '/debug'
