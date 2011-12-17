@@ -7,7 +7,7 @@ SLASH_ENABLE_ADDON1 = '/en'
 SlashCmdList['SMART_ADDON'] = function(s)
 	if(not s) then return end
 
-	for action, addon in s:gmatch'(.):([^%s]+)' do
+	for action, addon in s:gmatch'([de]):(%S+)' do
 		addon = addon:lower()
 		for i=1, GetNumAddOns() do
 			local name = GetAddOnInfo(i):lower()
